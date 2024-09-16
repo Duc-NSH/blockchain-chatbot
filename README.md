@@ -131,8 +131,8 @@ This repository documents the tools integrated within our chatbot system and the
 ### Tool 18: withdraw_from_staking
 - **Description**: Withdraw staked assets or tokens from a staking pool.
 - **Inputs**:
-  - `asset_
-  - entity` (string): The cryptocurrency or vault entity to withdraw.
+  - `asset_entity` (string): The cryptocurrency or vault entity to withdraw.
+  - `entity` (string): The cryptocurrency or vault entity to withdraw.
   - `amount` (float): The amount to withdraw.
 
 ### Tool 19: claim_Rewards_from_staking
