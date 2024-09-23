@@ -189,3 +189,6 @@ This repository documents the tools integrated within our chatbot system and the
   - `lock_id_entity` (int): The lock ID.
   - `amount` (float): The amount to compound.
 
+## Test Questions
+
+To test our system, we created 298 questions distributed across 62 dialogue conversations, utilizing all our tools in the file `test_questions.jsonl`. We employed a human-in-the-loop (HITL) evaluation process to assess all the questions in the test file.
