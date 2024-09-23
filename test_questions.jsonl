@@ -1,0 +1,298 @@
+{"conversation_id": "1", "question": "What’s the borrow rate of DAI on Trava?", "tools": [{"name": "get_lending_assets", "input": {"lending_pool_id": ["trava"], "token_symbol": ["DAI"]}}]}
+{"conversation_id": "1", "question": "Borrow it.", "tools": [{"name": "Borrow_in_Lendingpool", "input": {"token_symbol": "DAI", "lending_pool_id": "trava"}}]}
+{"conversation_id": "1", "question": "Transfer the borrowed DAI to my main wallet.", "tools": [{"name": "Transfer_in_Lendingpool", "input": {"token_symbol": "DAI", "lending_pool_id": "trava"}}]}
+{"conversation_id": "1", "question": "Repay the DAI loan.", "tools": [{"name": "Repay_in_Lendingpool", "input": {"token_symbol": "DAI", "lending_pool_id": "trava"}}]}
+{"conversation_id": "1", "question": "Show my updated DAI balance.", "tools": [{"name": "get_profile_wallet", "input": {}}]}
+{"conversation_id": "2", "question": "what can you do", "tools": [{"name": "introduce_myself", "input": {}}]}
+{"conversation_id": "2", "question": "give dai price", "tools": [{"name": "get_token_price", "input": {"list_token_symbol": ["dai"]}}]}
+{"conversation_id": "2", "question": "how about DKN", "tools": [{"name": "get_token_price", "input": {"list_token_symbol": ["DKN"]}}]}
+{"conversation_id": "2", "question": "init lock for rtrava", "tools": [{"name": "lock_creation", "input": {"asset_entity": "rtrava"}}]}
+{"conversation_id": "2", "question": "extend the time for it", "tools": [{"name": "unlock_duration_increase", "input": {"asset_entity": "rtrava"}}]}
+{"conversation_id": "3", "question": "staking 500 trava", "tools": [{"name": "staking_transaction", "input": {"asset_entity": "trava"}}]}
+{"conversation_id": "3", "question": "claim reward for it", "tools": [{"name": "Claim_Rewards_from_staking", "input": {"asset_entity": "trava"}}]}
+{"conversation_id": "3", "question": "tvl of spark", "tools": [{"name": "get_lending_information", "input": {"list_lending_pool_id": ["spark"]}}]}
+{"conversation_id": "3", "question": "tokens i should invest in now", "tools": [{"name": "get_ranking_token", "input": {}}]}
+{"conversation_id": "3", "question": "value of darknight", "tools": [{"name": "get_token_price", "input": {"list_token_symbol": ["darknight"]}}]}
+{"conversation_id": "4", "question": "value of Xudo", "tools": [{"name": "get_token_price", "input": {"list_token_symbol": ["Xudo"]}}]}
+{"conversation_id": "4", "question": "and Xpad.pro?", "tools": [{"name": "get_token_price", "input": {"list_token_symbol": ["Xpad.pro"]}}]}
+{"conversation_id": "4", "question": "help me withdraw it on Blume", "tools": [{"name": "Withdraw_in_Lendingpool", "input": {"token_symbol": "Xpad.pro", "lending_pool_id": "Blume"}}]}
+{"conversation_id": "4", "question": "show total borrow of Alkemi", "tools": [{"name": "get_lending_information", "input": {"list_lending_pool_id": ["Alkemi"]}}]}
+{"conversation_id": "4", "question": "if borrow apy of dai on trava higher than 0.5%, repay it", "tools": [{"name": "get_lending_assets", "input": {"lending_pool_id": ["trava"], "token_symbol": ["dai"]}},{"name": "Repay_in_Lendingpool", "input": {"lending_pool_id": "trava", "token_symbol": "dai"}}]}
+{"conversation_id": "5", "question": "top 5 token with largest trading Volume, and value of Sushi", "tools": [{"name": "get_token_price", "input": {"list_token_symbol": ["Sushi"]}}, {"name": "get_ranking_token", "input": {"orderBy": "tradingVolume"}}]}
+{"conversation_id": "5", "question": "your ability", "tools": [{"name": "introduce_myself", "input": {}}]}
+{"conversation_id": "5", "question": "i want to stake 500 trava", "tools": [{"name": "staking_transaction", "input": {"asset_entity": "trava"}}]}
+{"conversation_id": "5", "question": "then rtrava", "tools": [{"name": "staking_transaction", "input": {"asset_entity": "rtrava"}}]}
+{"conversation_id": "5", "question": "after that, unstake rtrava", "tools": [{"name": "withdraw_from_staking", "input": {"asset_entity": "rtrava"}}]}
+{"conversation_id": "6", "question": "Create a lock for 1000 TRAVA in governance for 30 days.", "tools": [{"name": "lock_creation", "input": {"asset_entity": "TRAVA", "amount": 1000, "duration": 30}}]}
+{"conversation_id": "6", "question": "Extend the lock duration for TRAVA by 15 days.", "tools": [{"name": "unlock_duration_increase", "input": {"asset_entity": "TRAVA", "duration": 15}}]}
+{"conversation_id": "6", "question": "Increase the lock amount of TRAVA by 500.", "tools": [{"name": "lock_amount_increase", "input": {"asset_entity": "TRAVA", "amount": 500}}]}
+{"conversation_id": "6", "question": "Withdraw 200 TRAVA from the lock.", "tools": [{"name": "withdraw_governance", "input": {"asset_entity": "TRAVA", "amount": 200}}]}
+{"conversation_id": "6", "question": "withdraw remaining trava", "tools": [{"name": "withdraw_governance", "input": {"asset_entity": "trava"}}]}
+{"conversation_id": "7", "question": "price of paxg and API3, number borrower of Strike", "tools": [{"name": "get_token_price", "input": {"list_token_symbol": ["paxg", "API3"]}}, {"name": "get_defi_list", "input": {"application_type": "staking"}}]}
+{"conversation_id": "7", "question": "top lending pool", "tools": [{"name": "get_defi_list", "input": {"Application Type": "lending pool"}}]}
+{"conversation_id": "7", "question": "please help me compound 500 trava", "tools": [{"name": "Compound_in_governance", "input": {"asset_entity": "trava"}}]}
+{"conversation_id": "7", "question": "What are the borrowing rates for AVAX on Aave and Compound", "tools": [{"name": "get_lending_assets", "input": {"lending_pool_id": ["aave", "compound"], "token_symbol": ["AVAX"]}}]}
+{"conversation_id": "7", "question": "Redeem my rtrava staking rewards", "tools": [{"name": "Claim_Rewards_from_staking", "input": {"asset_entity": "rtrava"}}]}
+{"conversation_id": "8", "question": "Merge lock 2 and 3 for me.", "tools": [{"name": "merge_lock", "input": {"object_entity": "Governance", "transaction_type": "Merge", "lock_id_1": 2, "lock_id_2": 3}}]}
+{"conversation_id": "8", "question": "Increase the lock amount of TRAVA by 300.", "tools": [{"name": "lock_amount_increase", "input": {"asset_entity": "TRAVA", "lock_id_entity": 2, "amount": 300}}]}
+{"conversation_id": "8", "question": "Extend the lock duration of TRAVA by 20 days.", "tools": [{"name": "unlock_duration_increase", "input": {"asset_entity": "TRAVA", "lock_id_entity": 2, "duration": 20}}]}
+{"conversation_id": "8", "question": "Withdraw 150 TRAVA from the governance lock.", "tools": [{"name": "withdraw_governance", "input": {"asset_entity": "TRAVA", "lock_id_entity": 2, "amount": 150}}]}
+{"conversation_id": "8", "question": "Compound 400 TRAVA in governance lock 2.", "tools": [{"name": "Compound_in_governance", "input": {"asset_entity": "TRAVA", "lock_id_entity": 2, "amount": 400}}]}
+{"conversation_id": "9", "question": "Stake 600 TRAVA.", "tools": [{"name": "staking_transaction", "input": {"asset_entity": "TRAVA", "amount": 600}}]}
+{"conversation_id": "9", "question": "Claim rewards from staking TRAVA.", "tools": [{"name": "Claim_Rewards_from_staking", "input": {"asset_entity": "TRAVA", "amount": 0}}]}
+{"conversation_id": "9", "question": "Withdraw 250 TRAVA from staking.", "tools": [{"name": "withdraw_from_staking", "input": {"asset_entity": "TRAVA", "amount": 250}}]}
+{"conversation_id": "9", "question": "Transfer 150 staked TRAVA tokens to another wallet.", "tools": [{"name": "transfer_staked_token", "input": {"asset_entity": "TRAVA", "amount": 150}}]}
+{"conversation_id": "9", "question": "Stake it.", "tools": [{"name": "staking_transaction", "input": {"asset_entity": "TRAVA", "amount": 200}}]}
+{"conversation_id": "10", "question": "Convert 100 reward TRAVA tokens into BNB.", "tools": [{"name": "convert_reward_in_Lendingpool", "input": {"token_symbol": "TRAVA", "lending_pool_id": "trava", "amount": 100, "chain_id": "56"}}]}
+{"conversation_id": "10", "question": "Merge lock 10 and 11.", "tools": [{"name": "merge_lock", "input": {"object_entity": "Governance", "transaction_type": "Merge", "lock_id_1": 10, "lock_id_2": 11}}]}
+{"conversation_id": "10", "question": "Increase lock amount by 50 TRAVA.", "tools": [{"name": "lock_amount_increase", "input": {"asset_entity": "TRAVA", "lock_id_entity": 10, "amount": 50}}]}
+{"conversation_id": "10", "question": "Extend the lock duration by 5 days.", "tools": [{"name": "unlock_duration_increase", "input": {"asset_entity": "TRAVA", "lock_id_entity": 10, "duration": 5}}]}
+{"conversation_id": "10", "question": "Compound 200 TRAVA in governance lock 10.", "tools": [{"name": "Compound_in_governance", "input": {"asset_entity": "TRAVA", "lock_id_entity": 10, "amount": 200}}]}
+{"conversation_id": "11", "question": "What's the market value of GuildFi, the borrow rate on dForce, and the TVL of YLDR?", "tools": [{"name": "get_token_price", "input": {"list_token_symbol": ["GuildFi"]}}, {"name": "get_lending_assets", "input": {"lending_pool_id": ["dForce"], "token_symbol": ["GuildFi"]}}, {"name": "get_lending_information", "input": {"list_lending_pool_id": ["YLDR"]}}]}
+{"conversation_id": "11", "question": "Deposit 500 USDT into the Trava", "tools": [{"name": "Deposit_in_Lendingpool", "input": {"token_symbol": "USDT", "lending_pool_id": "Trava", "amount": 500}}]}
+{"conversation_id": "11", "question": "Transfer 300 USDT from Trava lending pool", "tools": [{"name": "Transfer_in_Lendingpool", "input": {"token_symbol": "USDT", "lending_pool_id": "trava", "amount": 300}}]}
+{"conversation_id": "11", "question": "can you convert 100 TRAVA rewards in the lending pool?", "tools": [{"name": "convert_reward_in_Lendingpool", "input": {"token_symbol": "TRAVA", "lending_pool_id": "trava", "amount": 100}}]}
+{"conversation_id": "11", "question": "Claim rewards from TRAVA in the lending pool.", "tools": [{"name": "Claim_Reward_in_Lendingpool", "input": {"token_symbol": "TRAVA", "lending_pool_id": "trava", "amount": 0}}]}
+{"conversation_id": "12", "question": "Can you tell me the current borrowing rate for Venus on Trava?", "tools": [{"name": "get_lending_assets", "input": {"lending_pool_id": ["trava"], "token_symbol": ["Venus"]}}]}
+{"conversation_id": "12", "question": "Proceed to borrow it", "tools": [{"name": "Borrow_in_Lendingpool", "input": {"token_symbol": "Venus", "lending_pool_id": "trava"}}]}
+{"conversation_id": "12", "question": "Move the borrowed Venus to my primary wallet.", "tools": [{"name": "Transfer_in_Lendingpool", "input": {"token_symbol": "Venus", "lending_pool_id": "trava"}}]}
+{"conversation_id": "12", "question": "Pay back the Venus loan now.", "tools": [{"name": "Repay_in_Lendingpool", "input": {"token_symbol": "Venus", "lending_pool_id": "trava"}}]}
+{"conversation_id": "12", "question": "show me on my Venus balance", "tools": [{"name": "get_profile_wallet", "input": {}}]}
+{"conversation_id": "13", "question": "Check the borrow rate of augur on Compound and rank tokens by trading volume.", "tools": [{"name": "get_lending_assets", "input": {"lending_pool_id": ["Compound"], "token_symbol": ["augur"]}}, {"name": "get_ranking_token", "input": {"orderBy": "tradingVolume"}}]}
+{"conversation_id": "13", "question": "Show the market price of gnosis and its borrowing rate on spark.", "tools": [{"name": "get_token_price", "input": {"list_token_symbol": ["gnosis"]}}, {"name": "get_lending_information", "input": {"list_lending_pool_id": ["spark"]}}]}
+{"conversation_id": "13", "question": "value of X Capital and the TVL of Pando Rings.", "tools": [{"name": "get_token_price", "input": {"list_token_symbol": ["X Capital"]}}, {"name": "get_defi_list", "input": {"application_type": "staking"}}]}
+{"conversation_id": "13", "question": "Provide the current rate for depositing matic network on venus and rank tokens by market cap change rate.", "tools": [{"name": "get_lending_assets", "input": {"lending_pool_id": ["venus"], "token_symbol": ["matic network"]}}, {"name": "get_ranking_token", "input": {"orderBy": "marketCapChangeRate"}}]}
+{"conversation_id": "13", "question": "make deposit for it", "tools": [{"name": "Deposit_in_Lendingpool", "input": {"token_symbol": "matic", "lending_pool_id": "venus"}}]}
+{"conversation_id": "14", "question": "Transfer 250 USDC from my lending pool on Aave v2 to my main wallet.", "tools": [{"name": "Transfer_in_Lendingpool", "input": {"token_symbol": "USDC", "lending_pool_id": "Aave", "amount": 250}}]}
+{"conversation_id": "14", "question": "Can you convert my TRAVA rewards in trava", "tools": [{"name": "convert_reward_in_Lendingpool", "input": {"token_symbol": "TRAVA", "lending_pool_id": "trava"}}]}
+{"conversation_id": "14", "question": "how about dai", "tools": [{"name": "convert_reward_in_Lendingpool", "input": {"token_symbol": "dai", "lending_pool_id": "trava"}}]}
+{"conversation_id": "14", "question": "giải thích về blockchain", "tools": []}
+{"conversation_id": "14", "question": "combine my governance locks with IDs 5 and 6.", "tools": [{"name": "merge_lock", "input": {"object_entity": "Governance", "transaction_type": "Merge", "lock_id_1": 5, "lock_id_2": 6}}]}
+{"conversation_id": "14", "question": "increase the lock amount by 150 TRAVA.", "tools": [{"name": "lock_amount_increase", "input": {"asset_entity": "TRAVA", "amount": 150}}]}
+{"conversation_id": "15", "question": "giải thích hiện tượng cầu vồng", "tools": []}
+{"conversation_id": "15", "question": "nó thường xuất hiện khi nào", "tools": []}
+{"conversation_id": "15", "question": "光速是多少？", "tools": []}
+{"conversation_id": "15", "question": "已经是最快的了吗？", "tools": []}
+{"conversation_id": "15", "question": "عاصمة فرنسا", "tools": []}
+{"conversation_id": "16", "question": "Was ist BTC?", "tools": []}
+{"conversation_id": "16", "question": "Wer hat es erstellt?", "tools": []}
+{"conversation_id": "16", "question": "thế còn eth", "tools": []}
+{"conversation_id": "16", "question": "mô hình ngôn ngữ lớn là gì", "tools": []}
+{"conversation_id": "16", "question": "model đầu tiên", "tools": []}
+{"conversation_id": "17", "question": "Transfer 150 BUSD from my Trava lending pool to my main account.", "tools": [{"name": "Transfer_in_Lendingpool", "input": {"token_symbol": "BUSD", "lending_pool_id": "trava", "amount": 150}}]}
+{"conversation_id": "17", "question": "Can you claim the rewards for BUSD in the pool?", "tools": [{"name": "Claim_Reward_in_Lendingpool", "input": {"token_symbol": "BUSD", "lending_pool_id": "trava", "amount": 0}}]}
+{"conversation_id": "17", "question": "Convert 50 reward BUSD", "tools": [{"name": "convert_reward_in_Lendingpool", "input": {"token_symbol": "BUSD", "lending_pool_id": "trava", "amount": 50}}]}
+{"conversation_id": "17", "question": "Deposit 500 ETH into my Trava lending pool.", "tools": [{"name": "Deposit_in_Lendingpool", "input": {"token_symbol": "ETH", "lending_pool_id": "trava", "amount": 500}}]}
+{"conversation_id": "17", "question": "I need to withdraw 250 ETH from the pool.", "tools": [{"name": "Withdraw_in_Lendingpool", "input": {"token_symbol": "ETH", "lending_pool_id": "trava", "amount": 250}}]}
+{"conversation_id": "18", "question": "What is the current price of the BTC token in AAVE?", "tools": [{"name": "get_token_price", "input": {"token_symbol": ["BTC"], "list_chain_id": ["aave"]}}]}
+{"conversation_id": "18", "question": "What are the borrow and deposit APY rates for BTC in the AAVE V3 lending pool?", "tools": [{"name": "get_lending_assets", "input": {"lending_pool_id": ["aave-v3"], "token_symbol": ["BTC"]}}]}
+{"conversation_id": "18", "question": "What is the total value locked (TVL) for BTC in the AAVE V3 pool?", "tools": [{"name": "get_lending_information", "input": {"list_lending_pool_id": ["aave-v3"],"token_symbol": ["BTC"]}}]}
+{"conversation_id": "18", "question": "I would like to stake 500 BTC tokens. Can you execute the staking transaction?", "tools": [{"name": "staking_transaction", "input": {"asset_entity": "BTC", "amount": 500}}]}
+{"conversation_id": "19", "question": "What is the current market cap of the USDC token?", "tools": [{"name": "get_ranking_token", "input": {"orderBy": "marketCapChangeRate"}}]}
+{"conversation_id": "19", "question": "Can you tell me the current deposit and borrow rates for USDC on AAVE?", "tools": [{"name": "get_lending_assets", "input": {"lending_pool_id": ["aave-v3"], "token_symbol": ["USDC"]}}]}
+{"conversation_id": "19", "question": "How many active lenders and borrowers are currently using USDC on AAVE?", "tools": [{"name": "get_lending_information", "input": {"list_lending_pool_id": ["aave-v3"],"token_symbol": ["USDC"]}}]}
+{"conversation_id": "19", "question": "I want to borrow USDC in the AAVE V3 pool?", "tools": [{"name": "Borrow_in_Lendingpool", "input": {"list_lending_pool_id": ["aave-v3"],"token_symbol": ["USDC"]}}]}
+{"conversation_id": "20", "question": "What is the total value locked in the Trava lending pool?", "tools": [{"name": "get_lending_information", "input": {"list_lending_pool_id": ["trava"]}}]}
+{"conversation_id": "20", "question": "How many users are currently borrowing on the Trava platform?", "tools": [{"name": "get_lending_information", "input": {"list_lending_pool_id": ["trava"]}}]}
+{"conversation_id": "20", "question": "What is the borrow rate of DAI on Trava?", "tools": [{"name": "get_lending_assets", "input": {"lending_pool_id": ["trava"], "token_symbol": ["DAI"]}}]}
+{"conversation_id": "20", "question": "I want to borrow 500 DAI from the Trava lending pool.", "tools": [{"name": "Borrow_in_Lendingpool", "input": {"token_symbol": "DAI", "lending_pool_id": "trava", "amount": 500}}]}
+{"conversation_id": "21", "question": "Can you show me the ranking of top DeFi applications by total value locked?", "tools": [{"name": "get_defi_list", "input": {"application_type": "lending"}}]}
+{"conversation_id": "21", "question": "What is the current supply and borrow volume in the Aave lending pool?", "tools": [{"name": "get_lending_information", "input": {"list_lending_pool_id": ["aave"]}}]}
+{"conversation_id": "21", "question": "What is the deposit APY of USDC on the Aave lending pool?", "tools": [{"name": "get_lending_assets", "input": {"lending_pool_id": ["aave"], "token_symbol": ["USDC"]}}]}
+{"conversation_id": "21", "question": "I want to deposit 1000 USDC into the Aave lending pool.", "tools": [{"name": "Deposit_in_Lendingpool", "input": {"token_symbol": "USDC", "lending_pool_id": "aave", "amount": 1000}}]}
+{"conversation_id": "22", "question": "Can you provide the current ranking of tokens by trading volume?", "tools": [{"name": "get_ranking_token", "input": {"orderBy": "tradingVolume"}}]}
+{"conversation_id": "22", "question": "What is the current price of ETH across multiple chains?", "tools": [{"name": "get_token_price", "input": {"list_token_symbol": ["ETH"]}}]}
+{"conversation_id": "22", "question": "What is the borrowing APY for ETH on the Compound lending pool?", "tools": [{"name": "get_lending_assets", "input": {"lending_pool_id": ["compound"], "token_symbol": ["ETH"]}}]}
+{"conversation_id": "22", "question": "I want to repay 2 ETH to the Compound lending pool.", "tools": [{"name": "Repay_in_Lendingpool", "input": {"token_symbol": "ETH", "lending_pool_id": "compound", "amount": 2}}]}
+{"conversation_id": "23", "question": "What is the TVL (Total Value Locked) change rate of the Curve lending pool?", "tools": [{"name": "get_lending_information", "input": {"list_lending_pool_id": ["curve"]}}]}
+{"conversation_id": "23", "question": "How many users are currently borrowing on the Curve lending pool?", "tools": [{"name": "get_lending_information", "input": {"list_lending_pool_id": ["curve"]}}]}
+{"conversation_id": "23", "question": "What is the deposit APY of USDT on Curve?", "tools": [{"name": "get_lending_assets", "input": {"lending_pool_id": ["curve"], "token_symbol": ["USDT"]}}]}
+{"conversation_id": "23", "question": "What is the borrow APY of USDT on Curve?", "tools": [{"name": "get_lending_assets", "input": {"lending_pool_id": ["curve"], "token_symbol": ["USDT"]}}]}
+{"conversation_id": "23", "question": "I want to borrow 1000 USDT from the Curve lending pool.", "tools": [{"name": "Borrow_in_Lendingpool", "input": {"token_symbol": "USDT", "lending_pool_id": "curve", "amount": 1000}}]}
+{"conversation_id": "24", "question": "What are the top 3 DeFi applications based on total users?", "tools": [{"name": "get_defi_list", "input": {"application_type": "users"}}]}
+{"conversation_id": "24", "question": "What is the current total borrow on the MakerDAO lending pool?", "tools": [{"name": "get_lending_information", "input": {"list_lending_pool_id": ["makerdao"]}}]}
+{"conversation_id": "24", "question": "What is the borrow APY of DAI on MakerDAO?", "tools": [{"name": "get_lending_assets", "input": {"lending_pool_id": ["makerdao"], "token_symbol": ["DAI"]}}]}
+{"conversation_id": "24", "question": "I want to deposit 500 DAI into the MakerDAO lending pool.", "tools": [{"name": "Deposit_in_Lendingpool", "input": {"token_symbol": "DAI", "lending_pool_id": "makerdao", "amount": 500}}]}
+{"conversation_id": "25", "question": "Can you show me the current ranking of tokens by market cap?", "tools": [{"name": "get_ranking_token", "input": {"orderBy": "marketCapChangeRate"}}]}
+{"conversation_id": "25", "question": "What is the price of BTC across multiple chains?", "tools": [{"name": "get_token_price", "input": {"list_token_symbol": ["BTC"]}}]}
+{"conversation_id": "25", "question": "What is the borrow and deposit APY of BTC on the Venus lending pool?", "tools": [{"name": "get_lending_assets", "input": {"lending_pool_id": ["venus"], "token_symbol": ["BTC"]}}]}
+{"conversation_id": "25", "question": "I want to deposit 0.5 BTC into the Venus lending pool.", "tools": [{"name": "Deposit_in_Lendingpool", "input": {"token_symbol": "BTC", "lending_pool_id": "venus", "amount": 0.5}}]}
+{"conversation_id": "26", "question": "Which DeFi lending pools have the highest TVL growth rate?", "tools": [{"name": "get_defi_list", "input": {"application_type": "lending"}}]}
+{"conversation_id": "26", "question": "What is the total supply in the Anchor Protocol lending pool?", "tools": [{"name": "get_lending_information", "input": {"list_lending_pool_id": ["anchor"]}}]}
+{"conversation_id": "26", "question": "What is the deposit APY of UST on the Anchor Protocol?", "tools": [{"name": "get_lending_assets", "input": {"lending_pool_id": ["anchor"], "token_symbol": ["UST"]}}]}
+{"conversation_id": "26", "question": "What is the borrow APY of UST on the Anchor Protocol?", "tools": [{"name": "get_lending_assets", "input": {"lending_pool_id": ["anchor"], "token_symbol": ["UST"]}}]}
+{"conversation_id": "26", "question": "I want to withdraw 200 UST from the Anchor Protocol.", "tools": [{"name": "Withdraw_in_Lendingpool", "input": {"token_symbol": "UST", "lending_pool_id": "anchor", "amount": 200}}]}
+{"conversation_id": "27", "question": "What is the most popular lending pool based on the number of borrowers?", "tools": [{"name": "get_defi_list", "input": {"application_type": "lending"}}]}
+{"conversation_id": "27", "question": "What is the total borrow volume in the Iron Bank lending pool?", "tools": [{"name": "get_lending_information", "input": {"list_lending_pool_id": ["ironbank"]}}]}
+{"conversation_id": "27", "question": "What is the deposit APY of USDC on the Iron Bank lending pool?", "tools": [{"name": "get_lending_assets", "input": {"lending_pool_id": ["ironbank"], "token_symbol": ["USDC"]}}]}
+{"conversation_id": "27", "question": "What is the borrow APY of USDC on the Iron Bank lending pool?", "tools": [{"name": "get_lending_assets", "input": {"lending_pool_id": ["ironbank"], "token_symbol": ["USDC"]}}]}
+{"conversation_id": "27", "question": "I want to borrow 3000 USDC from the Iron Bank lending pool.", "tools": [{"name": "Borrow_in_Lendingpool", "input": {"token_symbol": "USDC", "lending_pool_id": "ironbank", "amount": 3000}}]}
+{"conversation_id": "28", "question": "Give me tvl of Spark", "tools": [{"name": "get_lending_information", "input": {"list_lending_pool_id": ["spark"]}}]}
+{"conversation_id": "28", "question": "give me five lending pool that have tvl bigger than Spark", "tools": [{"name": "get_defi_list", "input": {"application_type": ["lending pool"]}}]}
+{"conversation_id": "28", "question": "is tvl of AAVE V3 greater than Spark ?.", "tools": [{"name": "get_lending_information", "input": {"list_lending_pool_id": ["aave-v3", "spark"]}}]}
+{"conversation_id": "28", "question": "stake 100 trava", "tools": [{"name": "staking_transaction", "input": {"asset_entity": "trava", "amount": 150}}]}
+{"conversation_id": "28", "question": "price of weth", "tools": [{"name": "get_token_price", "input": {"list_token_symbol": ["weth"]}}]}
+{"conversation_id": "29", "question": "price of btc", "tools": [{"name": "get_token_price", "input": {"list_token_symbol": ["btc"]}}]}
+{"conversation_id": "29", "question": "compare price of btc and Doge", "tools": [{"name": "get_token_price", "input": {"list_token_symbol": ["btc", "Doge"]}}]}
+{"conversation_id": "29", "question": "borrow rate of Doge on trava", "tools": [{"name": "get_lending_assets", "input": {"lending_pool_id": ["trava-finance"], "token_symbol": ["doge"]}}]}
+{"conversation_id": "29", "question": "borrow it", "tools": [{"name": "Borrow_in_Lendingpool", "input": {"token_symbol": "Doge", "lending_pool_id": "trava-finance"}}]}
+{"conversation_id": "29", "question": "borrow btc on trava", "tools": [{"name": "Borrow_in_Lendingpool", "input": {"token_symbol": "btc", "lending_pool_id": "trava-finance"}}]}
+{"conversation_id": "30", "question": "price of btc and ethereum", "tools": [{"name": "get_token_price", "input": {"list_token_symbol": ["btc", "eth"]}}]}
+{"conversation_id": "30", "question": "how about Dai", "tools": [{"name": "get_token_price", "input": {"list_token_symbol": ["Dai"]}}]}
+{"conversation_id": "30", "question": "deposit rate of it on spark", "tools": [{"name": "get_lending_assets", "input": {"lending_pool_id": ["spark"], "token_symbol": ["dai"]}}]}
+{"conversation_id": "30", "question": "tvl of spark?", "tools": [{"name": "get_lending_information", "input": {"list_lending_pool_id": ["spark"]}}]}
+{"conversation_id": "30", "question": "borrow DOT on best lending pool", "tools": [{"name": "Borrow_in_Lendingpool", "input": {"token_symbol": "DOT", "lending_pool_id": "trava-finance"}}]}
+{"conversation_id": "31", "question": "what can you help me", "tools": [{"name": "introduce_myself", "input": {}}]}
+{"conversation_id": "31", "question": "claim reward for it", "tools": [{"name": "Claim_Rewards_from_staking", "input": {"asset_entity": "trava"}}]}
+{"conversation_id": "31", "question": "Give me lending pool has biggest tvl?", "tools": [{"name": "get_defi_list", "input": {"application_type": "lending pool"}}]}
+{"conversation_id": "31", "question": "Which token shoul I buy now", "tools": [{"name": "get_ranking_token", "input": {}}]}
+{"conversation_id": "31", "question": "borrow BTC trava", "tools": [{"name": "Borrow_in_Lendingpool", "input": {"token_symbol": "btc", "lending_pool_id": "trava-finance"}}]}
+{"conversation_id": "32", "question": "What are the prices of SOL", "tools": [{"name": "get_token_price", "input": {"list_token_symbol": ["sol"]}}]}
+{"conversation_id": "32", "question": "deposit rates for SOL on Aave", "tools": [{"name": "get_lending_assets", "input": {"lending_pool_id": ["aave-v3"], "token_symbol": ["sol"]}}]}
+{"conversation_id": "32", "question": "stake 150 SOL", "tools": [{"name": "staking_transaction", "input": {"asset_entity": "trava", "amount": 150}}]}
+{"conversation_id": "32", "question": "withdraw SOL on trava", "tools": [{"name": "Withdraw_in_Lendingpool", "input": {"token_symbol": "SOL", "lending_pool_id": "trava-finance"}}]}
+{"conversation_id": "32", "question": "display my updated wallet balance", "tools": [{"name": "get_profile_wallet", "input": {}}]}
+{"conversation_id": "33", "question": "What's the current price of weth?", "tools": [{"name": "get_token_price", "input": {"list_token_symbol": ["weth"]}}]}
+{"conversation_id": "33", "question": "Check the deposit rate for weth on Aave.", "tools": [{"name": "get_lending_assets", "input": {"lending_pool_id": ["aave"], "token_symbol": ["weth"]}}]}
+{"conversation_id": "33", "question": "Deposit weth into Aave.", "tools": [{"name": "Deposit_in_Lendingpool", "input": {"token_symbol": "weth", "lending_pool_id": "aave"}}]}
+{"conversation_id": "33", "question": "Claim rewards from my weth deposit.", "tools": [{"name": "Claim_Reward_in_Lendingpool", "input": {"token_symbol": "weth", "lending_pool_id": "aave"}}]}
+{"conversation_id": "33", "question": "Withdraw my weth from Aave.", "tools": [{"name": "Withdraw_in_Lendingpool", "input": {"token_symbol": "weth", "lending_pool_id": "aave"}}]}
+{"conversation_id": "34", "question": "Price of DOT?", "tools": [{"name": "get_token_price", "input": {"list_token_symbol": ["DOT"]}}]}
+{"conversation_id": "34", "question": "Can you show me the deposit rate of it?", "tools": [{"name": "get_lending_assets", "input": {"lending_pool_id": ["trava-finance"], "token_symbol": ["dai"]}}]}
+{"conversation_id": "34", "question": "Stake my DOT tokens in the best pool available.", "tools": [{"name": "staking_transaction", "input": {"asset_entity": "DOT"}}]}
+{"conversation_id": "34", "question": "Claim rewards from my DOT staking.", "tools": [{"name": "Claim_Rewards_from_staking", "input": {"asset_entity": "DOT"}}]}
+{"conversation_id": "34", "question": "Withdraw my staked DOT tokens.", "tools": [{"name": "withdraw_from_staking", "input": {"asset_entity": "DOT"}}]}
+{"conversation_id": "35", "question": "What's the staking option for SUSHI?", "tools": [{"name": "get_defi_list", "input": {"application_type": "staking"}}]}
+{"conversation_id": "35", "question": "SUSHI price", "tools": [{"name": "get_token_price", "input": {"list_token_symbol": ["SUSHI"]}}]}
+{"conversation_id": "35", "question": "borrow it", "tools": [{"name": "Borrow_in_Lendingpool", "input": {"token_symbol": "SUSHI", "lending_pool_id": "trava-finance"}}]}
+{"conversation_id": "35", "question": "Stake my SUSHI tokens.", "tools": [{"name": "staking_transaction", "input": {"asset_entity": "SUSHI"}}]}
+{"conversation_id": "35", "question": "Transfer my staked SUSHI tokens.", "tools": [{"name": "transfer_staked_token", "input": {"asset_entity": "SUSHI"}}]}
+{"conversation_id": "36", "question": "What's the current price of USDEX.", "tools": [{"name": "get_token_price", "input": {"list_token_symbol": ["USDEX"]}}]}
+{"conversation_id": "36", "question": "Check if USDEX can be staked on any platform?", "tools": [{"name": "get_defi_list", "input": {"application_type": "staking"}}]}
+{"conversation_id": "36", "question": "Stake my USDEX tokens =if there's a good option.", "tools": [{"name": "staking_transaction", "input": {"asset_entity": "USDEX"}}]}
+{"conversation_id": "36", "question": "Claim all my staking rewards for USDEX.", "tools": [{"name": "Claim_Rewards_from_staking", "input": {"asset_entity": "USDEX"}}]}
+{"conversation_id": "36", "question": "Withdraw USDEX from staking pool.", "tools": [{"name": "withdraw_from_staking", "input": {"asset_entity": "USDEX"}}]}
+{"conversation_id": "37", "question": "deposit rate of ETH on Granavy?", "tools": [{"name": "get_lending_assets", "input": {"lending_pool_id": ["Granavy"], "token_symbol": ["ETH"]}}]}
+{"conversation_id": "37", "question": "Deposit ETH into Granavy.", "tools": [{"name": "Deposit_in_Lendingpool", "input": {"token_symbol": "ETH", "lending_pool_id": "Granavy"}}]}
+{"conversation_id": "37", "question": "Claim rewards from my ETH deposit.", "tools": [{"name": "Claim_Reward_in_Lendingpool", "input": {"token_symbol": "ETH", "lending_pool_id": "Granavy"}}]}
+{"conversation_id": "37", "question": "Borrow ETH on best lending pool.", "tools": [{"name": "Withdraw_in_Lendingpool", "input": {"token_symbol": "Granavy", "lending_pool_id": "Granavy"}}]}
+{"conversation_id": "37", "question": "Show my current ETH balance.", "tools": [{"name": "get_profile_wallet", "input": {"wallet_address": "0x6D6eB8749c7336e483002D07feae784aa4D6448e", "chain_name": "Ethereum"}}]}
+{"conversation_id": "38", "question": "borrow rate of DAI on Trava?", "tools": [{"name": "get_lending_assets", "input": {"lending_pool_id": ["trava"], "token_symbol": ["DAI"]}}]}
+{"conversation_id": "38", "question": "borrow rate of it on aave v3?", "tools": [{"name": "get_lending_assets", "input": {"lending_pool_id": ["aave-v3"], "token_symbol": ["DAI"]}}]}
+{"conversation_id": "38", "question": "borrow it.", "tools": [{"name": "Borrow_in_Lendingpool", "input": {"token_symbol": "DAI", "lending_pool_id": "trava-finance"}}]}
+{"conversation_id": "38", "question": "Borrow it on venus.", "tools": [{"name": "Borrow_in_Lendingpool", "input": {"token_symbol": "DAI", "lending_pool_id": "venus"}}]}
+{"conversation_id": "38", "question": "price of weth", "tools": [{"name": "get_token_price", "input": {"list_token_symbol": ["weth"]}}]}
+{"conversation_id": "39", "question": "price of weth", "tools": [{"name": "get_token_price", "input": {"list_token_symbol": ["weth"]}}]}
+{"conversation_id": "39", "question": "compare price of weth and btc", "tools": [{"name": "get_token_price", "input": {"list_token_symbol": ["weth", "btc"]}}]}
+{"conversation_id": "39", "question": "borrow rate of weth on aave v3", "tools": [{"name": "get_lending_assets", "input": {"lending_pool_id": ["aave-v3"], "token_symbol": ["weth"]}}]}
+{"conversation_id": "39", "question": "borrow weth", "tools": [{"name": "Borrow_in_Lendingpool", "input": {"token_symbol": "weth", "lending_pool_id": "trava-finance"}}]}
+{"conversation_id": "39", "question": "borrow dai on trava", "tools": [{"name": "Borrow_in_Lendingpool", "input": {"token_symbol": "DAI", "lending_pool_id": "trava-finance"}}]}
+{"conversation_id": "40", "question": "price of btc and ethereum", "tools": [{"name": "get_token_price", "input": {"list_token_symbol": ["btc", "eth"]}}]}
+{"conversation_id": "40", "question": "how about weth", "tools": [{"name": "get_token_price", "input": {"list_token_symbol": ["weth"]}}]}
+{"conversation_id": "40", "question": "deposit rate of it on spark", "tools": [{"name": "get_lending_assets", "input": {"lending_pool_id": ["spark"], "token_symbol": ["weth"]}}]}
+{"conversation_id": "40", "question": "tvl of spark?", "tools": [{"name": "get_lending_information", "input": {"list_lending_pool_id": ["spark"]}}]}
+{"conversation_id": "40", "question": "borrow weth on best lending pool", "tools": [{"name": "Borrow_in_Lendingpool", "input": {"token_symbol": "weth", "lending_pool_id": "trava-finance"}}]}
+{"conversation_id": "41", "question": "biggest lending pool?", "tools": [{"name": "get_defi_list", "input": {"application_type": "lending"}}]}
+{"conversation_id": "41", "question": "deposit rate of weth on this lending pool?", "tools": [{"name": "get_lending_assets", "input": {"lending_pool_id": ["aave-v3"], "token_symbol": ["weth"]}}]}
+{"conversation_id": "41", "question": "how about borrow rate?", "tools": [{"name": "get_lending_assets", "input": {"lending_pool_id": ["aave-v3"], "token_symbol": ["weth"]}}]}
+{"conversation_id": "41", "question": "borrow it on trava", "tools": [{"name": "Borrow_in_Lendingpool", "input": {"token_symbol": "weth", "lending_pool_id": "trava-finance"}}]}
+{"conversation_id": "41", "question": "deposit it on venus", "tools": [{"name": "Deposit_in_Lendingpool", "input": {"token_symbol": "weth", "lending_pool_id": "trava-finance"}}]}
+{"conversation_id": "42", "question": "give me tvl of aave v3, spark", "tools": [{"name": "get_lending_information", "input": {"list_lending_pool_id": ["aave-v3", "spark"]}}]}
+{"conversation_id": "42", "question": "borrow rate of dai on that lending pools", "tools": [{"name": "get_lending_assets", "input": {"lending_pool_id": ["aave-v3", "spark"], "token_symbol": ["dai"]}}]}
+{"conversation_id": "42", "question": "stake 150 trava", "tools": [{"name": "staking_transaction", "input": {"asset_entity": "trava", "amount": 150}}]}
+{"conversation_id": "42", "question": "withdraw trava on trava", "tools": [{"name": "Withdraw_in_Lendingpool", "input": {"token_symbol": "trava", "lending_pool_id": "trava-finance"}}]}
+{"conversation_id": "42", "question": "price of trava", "tools": [{"name": "get_token_price", "input": {"list_token_symbol": ["trava"]}}]}
+{"conversation_id": "43", "question": "stake 15000 trava", "tools": [{"name": "staking_transaction", "input": {"asset_entity": "trava", "amount": 15000}}]}
+{"conversation_id": "43", "question": "withdraw all of my rtrava from staking", "tools": [{"name": "withdraw_from_staking", "input": {"asset_entity": "rtrava", "amount": 0}}]}
+{"conversation_id": "43", "question": "repay 500 bnb on trava", "tools": [{"name": "Repay_in_Lendingpool", "input": {"token_symbol": "bnb", "lending_pool_id": "trava-finance", "amount": 500}}]}
+{"conversation_id": "43", "question": "deposit it to granary", "tools": [{"name": "Deposit_in_Lendingpool", "input": {"token_symbol": "weth", "lending_pool_id": "granary-finance"}}]}
+{"conversation_id": "43", "question": "borrow usdt", "tools": [{"name": "Borrow_in_Lendingpool", "input": {"token_symbol": "usdt", "lending_pool_id": "trava-finance"}}]}
+{"conversation_id": "44", "question": "which chain has lowest price of eth ", "tools": [{"name": "get_token_price", "input": {"list_token_symbol": ["eth"]}}]}
+{"conversation_id": "44", "question": "compare price of eth and btc", "tools": [{"name": "get_token_price", "input": {"list_token_symbol": ["eth", "btc"]}}]}
+{"conversation_id": "44", "question": "deposit rate of eth and usdt on aave v3", "tools": [{"name": "get_lending_assets", "input": {"lending_pool_id": ["aave-v3"], "token_symbol": ["eth", "usdt"]}}]}
+{"conversation_id": "44", "question": "borrow eth", "tools": [{"name": "Borrow_in_Lendingpool", "input": {"token_symbol": "eth", "lending_pool_id": "trava-finance"}}]}
+{"conversation_id": "44", "question": "repay eth from venus ", "tools": [{"name": "Repay_in_Lendingpool", "input": {"token_symbol": "eth", "lending_pool_id": "venus"}}]}
+{"conversation_id": "45", "question": "borrow rate of weth and dai on spark", "tools": [{"name": "get_lending_assets", "input": {"lending_pool_id": ["spark"], "token_symbol": ["weth", "dai"]}}]}
+{"conversation_id": "45", "question": "compare borrow rate of eth on aave v3 and trava", "tools": [{"name": "get_lending_assets", "input": {"lending_pool_id": ["aave-v3", "trava-finance"], "token_symbol": ["eth"]}}]}
+{"conversation_id": "45", "question": "do with borrow rate of dai", "tools": [{"name": "get_lending_assets", "input": {"lending_pool_id": ["aave-v3", "trava-finance"], "token_symbol": ["dai"]}}]}
+{"conversation_id": "45", "question": "withdraw dai on trava", "tools": [{"name": "Withdraw_in_Lendingpool", "input": {"token_symbol": "dai", "lending_pool_id": "trava-finance"}}]}
+{"conversation_id": "45", "question": "price of dai", "tools": [{"name": "get_token_price", "input": {"list_token_symbol": ["dai"]}}]}
+{"conversation_id": "46", "question": "tvl of aave v3", "tools": [{"name": "get_lending_information", "input": {"list_lending_pool_id": ["aave-v3"]}}]}
+{"conversation_id": "46", "question": "compare tvl of trava and spark", "tools": [{"name": "get_lending_information", "input": {"list_lending_pool_id": ["trava-finance", "spark"]}}]}
+{"conversation_id": "46", "question": "stake 200 trava", "tools": [{"name": "staking_transaction", "input": {"asset_entity": "trava", "amount": 200}}]}
+{"conversation_id": "46", "question": "repay 100 busd on trava", "tools": [{"name": "Repay_in_Lendingpool", "input": {"token_symbol": "busd", "lending_pool_id": "trava-finance", "amount": 100}}]}
+{"conversation_id": "46", "question": "deposit doge to trava", "tools": [{"name": "Deposit_in_Lendingpool", "input": {"token_symbol": "doge", "lending_pool_id": "trava-finance"}}]}
+{"conversation_id": "47", "question": "deposit btc to granary", "tools": [{"name": "Deposit_in_Lendingpool", "input": {"token_symbol": "btc", "lending_pool_id": "granary-finance"}}]}
+{"conversation_id": "47", "question": "should i borrow fil or link on wepiggy", "tools": [{"name": "get_lending_assets", "input": {"lending_pool_id": ["wepiggy"], "token_symbol": ["fil", "link"]}}, {",name": "Borrow_in_Lendingpool", "input": {"token_symbol": "fil", "lending_pool_id": "wepiggy"}}]}
+{"conversation_id": "47", "question": "withdraw all bnb on trava", "tools": [{"name": "Withdraw_in_Lendingpool", "input": {"token_symbol": "bnb", "lending_pool_id": "trava-finance"}}]}
+{"conversation_id": "47", "question": "price of dai and weth", "tools": [{"name": "get_token_price", "input": {"list_token_symbol": ["dai", "weth"]}}]}
+{"conversation_id": "47", "question": "borrow btcb on best lending pool", "tools": [{"name": "Borrow_in_Lendingpool", "input": {"token_symbol": "btcb", "lending_pool_id": "trava-finance"}}]}
+{"conversation_id": "48", "question": "Hello there", "tools": [{"name": "introduce_myself", "input": {}}]}
+{"conversation_id": "48", "question": "Give me the price of bitcoin today", "tools": [{"name": "get_token_price", "input": {"list_token_symbol": ["bitcoin", "btc"]}}]}
+{"conversation_id": "48", "question": "Tell me deposit rate of this coin on trava lending pool ", "tools": [{"name": "get_lending_assets", "input": {"lending_pool_id": ["trava-finance"], "token_symbol": ["bitcoin", "btc"]}}]}
+{"conversation_id": "48", "question": "What is deposit rate of trava token on this pool", "tools": [{"name": "get_lending_assets", "input": {"lending_pool_id": ["trava-finance"], "token_symbol": ["trava"]}}]}
+{"conversation_id": "48", "question": "okay, stake 100 dai on trava", "tools": [{"name": "staking_transaction", "input": {"asset_entity": "dai"}}]}
+{"conversation_id": "49", "question": "what is the price of dai today", "tools": [{"name": "get_token_price", "input": {"list_token_symbol": ["dai"]}}]}
+{"conversation_id": "49", "question": "I want to create a lock for my 100 dai", "tools": [{"name": "lock_creation", "input": {"asset_entity": "dai", "amount": 100}}]}
+{"conversation_id": "49", "question": "add more 50 dai ", "tools": [{"name": "lock_amount_increase", "input": {"asset_entity": "dai", "amount": 50}}]}
+{"conversation_id": "50", "question": "borrow rate of dai on trava", "tools": [{"name": "Borrow_in_Lendingpool", "input": {"token_symbol": "dai", "lending_pool_id": "trava"}}]}
+{"conversation_id": "50", "question": "borrow rate of dai on spark", "tools": [{"name": "Borrow_in_Lendingpool", "input": {"token_symbol": "dai", "lending_pool_id": "spark"}}]}
+{"conversation_id": "50", "question": "borrow rate of dai on Ethereum", "tools": [{"name": "Borrow_in_Lendingpool", "input": {"token_symbol": "dai", "lending_pool_id": "Ethereum"}}]}
+{"conversation_id": "50", "question": "I want to borrow 100 dai on trava and 50 dai on spark", "tools": [{"name": "", "input": {}}]}
+{"conversation_id": "51", "question": "What is the current price of Ethereum today?", "tools": [{"name": "get_token_price", "input": {"list_token_symbol": ["Ethereum"]}}]}
+{"conversation_id": "51", "question": "stake 1 ETH on Aave?", "tools": [{"name": "staking_transaction", "input": {"asset_entity": "ETH"}}]}
+{"conversation_id": "51", "question": "Can you provide the interest rate for borrowing USDC on Aave?", "tools": [{"name": "get_lending_assets", "input": {"lending_pool_id": ["Aave"], "token_symbol": ["USDC"]}}]}
+{"conversation_id": "52", "question": "What is the deposit rate for USDT on Compound?", "tools": [{"name": "get_lending_assets", "input": {"lending_pool_id": ["Compound"], "token_symbol": ["USDT"]}}]}
+{"conversation_id": "52", "question": "Could you help me stake 300 USDT on Compound?", "tools": [{"name": "staking_transaction", "input": {"asset_entity": "USDT", "amount": 300}}]}
+{"conversation_id": "52", "question": "What is the current price of USDT today?", "tools": [{"name": "get_token_price", "input": {"list_token_symbol": ["USDT"]}}]}
+{"conversation_id": "52", "question": "Can I borrow 150 USDT after staking?", "tools": [{"name": "Borrow_in_Lendingpool", "input": {"token_symbol": "USDT", "lending_pool_id": "Compound", "amount": 150}}]}
+{"conversation_id": "53", "question": "I want to know the current link price", "tools": [{"name": "get_token_price", "input": {"list_token_symbol": ["link"]}}]}
+{"conversation_id": "53", "question": "is it available on justlend?", "tools": [{"name": "get_lending_assets", "input": {"lending_pool_id": ["justlend"], "token_symbol": ["link"]}}]}
+{"conversation_id": "53", "question": "what about aave v3", "tools": [{"name": "get_lending_assets", "input": {"lending_pool_id": ["aave-v3"], "token_symbol": ["link"]}}]}
+{"conversation_id": "53", "question": "what is its current borrow rate on aave v3", "tools": [{"name": "get_lending_assets", "input": {"lending_pool_id": ["aave-v3"], "token_symbol": ["link"]}}]}
+{"conversation_id": "53", "question": "help me borrow link on aave v3", "tools": [{"name": "Borrow_in_Lendingpool", "input": {"token_symbol": "link", "lending_pool_id": "aave-v3"}}]}
+{"conversation_id": "54", "question": "top traded token right now and its price", "tools": [{"name": "get_ranking_token", "input": {"orderBy": "tradingVolume"}}, {"name": "get_token_price", "input": {"list_token_symbol": ["usdt"]}}]}
+{"conversation_id": "54", "question": "check if i had incoming amount of it on my wallet", "tools": [{"name": "get_profile_wallet", "input": {}}]}
+{"conversation_id": "54", "question": "I want to borrow 100 more of it from aave v3. what is the borrow rate", "tools": [{"name": "get_lending_assets", "input": {"lending_pool_id": ["aave-v3"], "token_symbol": ["usdt"]}}]}
+{"conversation_id": "54", "question": "does aave v3 have highest tvl", "tools": [{"name": "get_defi_list", "input": {"application_type": "lending"}}]}
+{"conversation_id": "54", "question": "Execute borrow 100 usdt on aave v3 on ethereum", "tools": [{"name": "Borrow_in_Lendingpool", "input": {"token_symbol": "usdt", "lending_pool_id": "aave-v3", "amount": 100.0, "chain_id": "0x1"}}]}
+{"conversation_id": "55", "question": "give me overall information of spark", "tools": [{"name": "get_lending_information", "input": {"list_lending_pool_id": ["spark"]}}]}
+{"conversation_id": "55", "question": "some tokens available on this pool", "tools": [{"name": "get_lending_assets", "input": {"lending_pool_id": ["spark"], "token_symbol": []}}]}
+{"conversation_id": "55", "question": "what is the deposit apy of weth on spark", "tools": [{"name": "get_lending_assets", "input": {"lending_pool_id": ["spark"], "token_symbol": ["weth"]}}]}
+{"conversation_id": "55", "question": "how about apy of dai", "tools": [{"name": "get_lending_assets", "input": {"lending_pool_id": ["spark"], "token_symbol": ["dai"]}}]}
+{"conversation_id": "55", "question": "deposit 10 dai on spark now", "tools": [{"name": "Deposit_in_Lendingpool", "input": {"token_symbol": "dai", "lending_pool_id": "spark", "amount": 10.0}}]}
+{"conversation_id": "56", "question": "which pool has the most users?", "tools": [{"name": "get_defi_list", "input": {"application_type": "lending"}}]}
+{"conversation_id": "56", "question": "what about tvl?", "tools": [{"name": "get_defi_list", "input": {"application_type": "lending"}}]}
+{"conversation_id": "56", "question": "compare the deposit rate of dai and tether on aave v3", "tools": [{"name": "get_lending_assets", "input": {"lending_pool_id": ["aave-v3"], "token_symbol": ["dai", "usdt"]}}]}
+{"conversation_id": "56", "question": "i want to claim my dai reward on aave v3", "tools": [{"name": "Claim_Reward_in_Lendingpool", "input": {"token_symbol": "dai", "lending_pool_id": "aave-v3"}}]}
+{"conversation_id": "56", "question": "deposit dai on venus", "tools": [{"name": "Deposit_in_Lendingpool", "input": {"token_symbol": "dai", "lending_pool_id": "venus"}}]}
+{"conversation_id": "57", "question": "which token have the lowest price among ton, uniswap and render", "tools": [{"name": "get_token_price", "input": {"list_token_symbol": ["TON", "UNI", "RNDR"]}}]}
+{"conversation_id": "57", "question": "recommend token with highest trading change rate", "tools": [{"name": "get_ranking_token", "input": {"orderBy": "tradingVolumeChangeRate"}}]}
+{"conversation_id": "57", "question": "create a lock for my trava for 1 week", "tools": [{"name": "lock_creation", "input": {"asset_entity": "trava", "duration": 7}}]}
+{"conversation_id": "57", "question": "what is radiant v2 total supply for borrow", "tools": [{"name": "get_lending_information", "input": {"list_lending_pool_id": ["radiant-v2"]}}]}
+{"conversation_id": "57", "question": "borrow WETH on BNB chain from it", "tools": [{"name": "Borrow_in_Lendingpool", "input": {"token_symbol": "weth", "lending_pool_id": "radiant-v2", "chain_id": "0x38"}}]}
+{"conversation_id": "58", "question": "which chain have the lowest doge price", "tools": [{"name": "get_token_price", "input": {"list_token_symbol": ["doge"]}}]}
+{"conversation_id": "58", "question": "recommend a token with high market volumn change rate", "tools": [{"name": "get_ranking_token", "input": {"orderBy": "marketCapChangeRate"}}]}
+{"conversation_id": "58", "question": "what is the borrow rate of it on aave-v3", "tools": [{"name": "get_lending_assets", "input": {"lending_pool_id": ["aave-v3"], "token_symbol": ["MEOW"]}}]}
+{"conversation_id": "58", "question": "borrow it from aave-v3", "tools": [{"name": "Borrow_in_Lendingpool", "input": {"token_symbol": "meow", "lending_pool_id": "aave-v3"}}]}
+{"conversation_id": "58", "question": "transfer doge from aave-v3", "tools": [{"name": "Transfer_in_Lendingpool", "input": {"token_symbol": "doge", "lending_pool_id": "aave-v3"}}]}
+{"conversation_id": "59", "question": "compare price of trava with pepe", "tools": [{"name": "get_token_price", "input": {"list_token_symbol": ["trava, pepe"]}}]}
+{"conversation_id": "59", "question": "how much i transfer out of my wallet recently", "tools": [{"name": "get_profile_wallet", "input": {}}]}
+{"conversation_id": "59", "question": "transfer my staked trava", "tools": [{"name": "transfer_staked_token", "input": {"asset_entity": "trava"}}]}
+{"conversation_id": "59", "question": "show me deposit rate of atom, uniswap, ton, cake on cream", "tools": [{"name": "get_lending_assets", "input": {"lending_pool_id": ["cream-lending"], "token_symbol": ["atom", "uni", "ton", "cake"]}}]}
+{"conversation_id": "59", "question": "Deposit one with highest apy", "tools": [{"name": "Deposit_in_Lendingpool", "input": {"token_symbol": "cake", "lending_pool_id": "cream-lending"}}]}
+{"conversation_id": "60", "question": "should i borrow weth on spark or radiant", "tools": [{"name": "get_lending_assets", "input": {"lending_pool_id": ["spark", "radiant-v2"], "token_symbol": ["weth"]}}]}
+{"conversation_id": "60", "question": "compare 2 pool tvl", "tools": [{"name": "get_lending_information", "input": {"list_lending_pool_id": ["spark", "radiant-v2"]}}]}
+{"conversation_id": "60", "question": "what is the tvl of lending pool with highest one", "tools": [{"name": "get_defi_list", "input": {"application_type": "lending"}}]}
+{"conversation_id": "60", "question": "borrow 100 weth on radiant v2", "tools": [{"name": "Borrow_in_Lendingpool", "input": {"token_symbol": "weth", "lending_pool_id": "radiant-v2"}}]}
+{"conversation_id": "60", "question": "repay all my weth on spark", "tools": [{"name": "Repay_in_Lendingpool", "input": {"token_symbol": "weth", "lending_pool_id": "spark"}}]}
+{"conversation_id": "61", "question": "compare borrow rate of weth on 5 pools with highest tvl", "tools": [{"name": "get_defi_list", "input": {"application_type": "lending"}}, {"name": "get_lending_assets", "input": {"lending_pool_id": ["aave-v3", "justlend", "spark", "venus", "venus-core-pool"], "token_symbol": ["weth"]}}]}
+{"conversation_id": "61", "question": "list all recent tokens that i transfer out of my wallet", "tools": [{"name": "get_profile_wallet", "input": {}}]}
+{"conversation_id": "61", "question": "what is the one with highest amount", "tools": [{"name": "get_profile_wallet", "input": {}}]}
+{"conversation_id": "61", "question": "what is weth price now", "tools": [{"name": "get_token_price", "input": {"list_token_symbol": ["weth"]}}]}
+{"conversation_id": "61", "question": "withdraw all of it from my deposit on aave-v3", "tools": [{"name": "Withdraw_in_Lendingpool", "input": {"token_symbol": "ETH", "lending_pool_id": "aave-v3"}}]}
+{"conversation_id": "62", "question": "list all recent tokens that i transfer out of my wallet", "tools": [{"name": "get_profile_wallet", "input": {}}]}
+{"conversation_id": "62", "question": "what is the one with highest amount", "tools": [{"name": "get_profile_wallet", "input": {}}]}
+{"conversation_id": "62", "question": "What is it borrow and deposit rate on aave-v3", "tools": [{"name": "get_lending_assets", "input": {"lending_pool_id": ["aave-v3"], "token_symbol": ["weth"]}}]}
+{"conversation_id": "62", "question": "Borrow 30 of it on aave-v3", "tools": [{"name": "Borrow_in_Lendingpool", "input": {"token_symbol": "weth", "lending_pool_id": "radiant-v2"}}]}
+{"conversation_id": "62", "question": "what is my incoming amount today", "tools": [{"name": "get_profile_wallet", "input": {}}]}
